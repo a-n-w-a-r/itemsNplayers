@@ -1,12 +1,24 @@
-# React + Vite
+# itemsNplayers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my first Fullstack application where I was mainly learning react on the go.
 
-Currently, two official plugins are available:
+### How does it work?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The table data is organised into third normal form:
 
-## Expanding the ESLint configuration
+- Players with their **player_tag** and **player_id**
+- Items with their **item_name**, **item_id** and **item_qty**
+- Linking table which links two ids together and a quantity for that link
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+When duplicate players are entered an error should be returned but for items, the quanity should increase.
+
+### How to run it?
+
+Start by running the **main.py** located in **.venv**, followed by the react app.
+
+If you don't know how to run a react app:
+
+- open a bash terminal
+- cd into the **ItemTracker-react** folder
+- type **'npm install'**  to install any dependancies
+- then type **'npm run dev'**
