@@ -1,0 +1,72 @@
+.data-object {
+    background-color: #2a2a3d;
+    color: #ffffff;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.data-object:hover {
+    background-color: #3a3a5a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+.data-object h2,
+.data-object h3 {
+    color: #61dafb;
+    margin-bottom: 1rem;
+}
+
+.data-object h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.data-object p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0.25rem 0;
+}
+
+/* Button base styles */
+.data-object button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Edit button: blue */
+.data-object button.edit-btn {
+    background-color: #4e8cff;
+}
+
+.data-object button.edit-btn:hover {
+    background-color: #3a6edc;
+}
+
+/* Delete button: red */
+.data-object button.delete-btn {
+    background-color: #e74c3c;
+}
+
+.data-object button.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Space between buttons */
+.data-object button + button {
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,78 @@
+.player-info {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #1c1c2b; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.player-info h2 {
+  margin-bottom: 1rem;
+  color: #61dafb; /* Soft blue */
+  text-align: center;
+}
+
+.player-info .no-data {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.player-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.player-info ul li {
+  background-color: #2a2a3d;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.player-info ul li:hover {
+  background-color: #3a3f5c;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.player-info ul li button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.player-info ul li button:hover {
+  background-color: #e03e3e;
+}
+
+.player-info > button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #4e8cff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.player-info > button:hover {
+  background-color: #3a6edc;
+}

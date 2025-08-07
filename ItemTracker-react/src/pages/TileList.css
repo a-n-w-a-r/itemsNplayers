@@ -1,0 +1,19 @@
+.tile-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.tile-list li {
+    background-color: #2a2a3d;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.tile-list li:hover {
+    transform: translateY(-4px);
+}

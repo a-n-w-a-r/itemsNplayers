@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #1c1c2b;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #61dafb;
+    border-bottom-color: #61dafb;
+}
+
+.nav-link.active {
+    color: #61dafb;
+    border-bottom-color: #61dafb;
+    font-weight: 700;
+}
