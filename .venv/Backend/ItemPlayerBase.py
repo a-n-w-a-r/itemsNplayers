@@ -7,6 +7,7 @@ class ItemPlayerDBM(DatabaseManager):
     @DatabaseManager.requires_connection
     def create_itemPlay_table(self):
         create_table_query =   f"""
+                                CREATE DATABASE IF NOT EXISTS itemtracker_db;
                                 CREATE TABLE IF NOT EXISTS {self.table_name} (
                                 player_id INT,
                                 item_id INT,

@@ -7,6 +7,7 @@ class PlayerDBManager(DatabaseManager):
     def create_player_table(self):
         # Create the table of players
         create_table_query =  f"""
+                            CREATE DATABASE IF NOT EXISTS itemtracker_db;
                             CREATE TABLE IF NOT EXISTS {self.table_name} (
                             player_id INT AUTO_INCREMENT PRIMARY KEY,
                             player_tag VARCHAR(255) UNIQUE

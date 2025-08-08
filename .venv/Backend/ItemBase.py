@@ -6,6 +6,7 @@ class ItemDBManager(DatabaseManager):
     @DatabaseManager.requires_connection
     def create_item_table(self):
         create_table_query =   f"""
+                                CREATE DATABASE IF NOT EXISTS itemtracker_db;
                                 CREATE TABLE IF NOT EXISTS {self.table_name} (
                                 item_id INT AUTO_INCREMENT PRIMARY KEY,
                                 item_name VARCHAR(255) UNIQUE,
